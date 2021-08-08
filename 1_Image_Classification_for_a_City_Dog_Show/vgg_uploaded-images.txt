@@ -1,0 +1,69 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:            Snapback_cap_01.jpg  label:               snapback cap
+ 2 key:             Hazel_mouse_01.jpg  label:                hazel mouse
+ 3 key:                     Dog_02.jpg  label:                        dog
+ 4 key:                     Dog_01.jpg  label:                        dog
+
+     MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+ NOT A MATCH:
+
+           Snapback_cap_01.jpg: 
+Real:               snapback cap   Classifier:                     neck brace
+
+            Hazel_mouse_01.jpg: 
+Real:                hazel mouse   Classifier:                        hamster
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+     MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+           Snapback_cap_01.jpg: 
+Real:               snapback cap   Classifier:                     neck brace  
+PetLabelDog: 0  ClassLabelDog: 0
+
+            Hazel_mouse_01.jpg: 
+Real:                hazel mouse   Classifier:                        hamster  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+Used model: vgg
+Number of Images: 4
+Number of Dog Images: 2
+Number of "Not-a" Dog Images: 2
+100.0 % Correct Dogs
+100.0 % Correct Breed
+100.0 % Correct "Not-a" Dog
+50.0 % Match
+
+** Total Elapsed Runtime: 0:0:3
